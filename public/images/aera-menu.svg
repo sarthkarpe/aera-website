@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <g fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- face-scanning brackets -->
+    <path d="M37 29 H27 Q20 29 20 37 V47" />
+    <path d="M91 29 H101 Q108 29 108 37 V47" />
+    <path d="M20 81 V91 Q20 99 28 99 H38" />
+    <path d="M108 81 V91 Q108 99 100 99 H90" />
+    <!-- face -->
+    <path d="M45 53 V61" />
+    <path d="M83 53 V61" />
+    <path d="M64 53 V68 Q64 73 59 74" />
+    <path d="M48 82 Q64 96 80 82" />
+  </g>
+</svg>
