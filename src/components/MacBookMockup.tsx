@@ -67,7 +67,7 @@ export const appScreens = [
     id: 'about',
     label: 'About Aera',
     image: '/images/app-about.png',
-    badge: 'Version 1.0.0',
+    badge: 'About Aera',
     title: 'App & Data Management',
     description: 'Version verification, privacy statement, and one-click clean uninstaller.',
   },

@@ -22,7 +22,7 @@ export function DownloadSection({ onOpenModal }: DownloadSectionProps) {
   const handleDownload = () => {
     // Trigger the verified zip download
     setDownloadStatus('loading');
-    setStatusMessage('Initiating download of Aera (13.6 MB)...');
+    setStatusMessage(`Initiating download of Aera (${siteConfig.release.installerSize})...`);
 
     try {
       const link = document.createElement('a');

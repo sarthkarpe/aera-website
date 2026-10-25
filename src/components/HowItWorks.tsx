@@ -13,7 +13,7 @@ export function HowItWorks() {
       title: 'Install Aera',
       description: 'Download the installer package and move Aera into your Applications folder.',
       image: '/images/app-about.png',
-      imageCaption: 'Aera 1.0.0 macOS Application',
+      imageCaption: 'Aera macOS Application',
       note: 'Gatekeeper notice: open System Settings → Privacy & Security, click "Open Anyway" on first run.',
     },
     {

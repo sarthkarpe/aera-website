@@ -12,16 +12,30 @@ import { FaqSection } from '@/components/FaqSection';
 import { Footer } from '@/components/Footer';
 import { DownloadModal } from '@/components/DownloadModal';
 
+import { siteConfig } from '@/config/site';
+
 export default function HomePage() {
   const [downloadModalOpen, setDownloadModalOpen] = useState(false);
 
   const handleOpenDownload = () => {
-    // Smooth scroll down to the dedicated download section or open the modal
+    // 1. Immediately initiate download of verified Aera package
+    try {
+      const link = document.createElement('a');
+      link.href = siteConfig.release.downloadUrl;
+      link.setAttribute('download', 'Aera.zip');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch {
+      // Fallback to opening modal if direct trigger fails
+      setDownloadModalOpen(true);
+      return;
+    }
+
+    // 2. Smoothly scroll down to installation instructions
     const downloadSection = document.getElementById('download');
     if (downloadSection) {
       downloadSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      setDownloadModalOpen(true);
     }
   };
 
